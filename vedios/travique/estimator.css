@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f7f9fc;
+}
+
+.estimator{
+    max-width:900px;
+    margin:80px auto;
+    padding:40px;
+}
+
+.estimator h1{
+    text-align:center;
+    font-size:3rem;
+    color:#111;
+}
+
+.estimator p{
+    text-align:center;
+    color:#666;
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+.estimator-form{
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+
+    display:grid;
+    gap:18px;
+}
+
+.estimator-form select,
+.estimator-form input{
+    padding:14px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    font-size:1rem;
+}
+
+.estimator-form button{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:black;
+    color:white;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+.estimator-form button:hover{
+    opacity:0.9;
+}
+
+#resultBox{
+    margin-top:40px;
+}
+
+.analysis-box{
+  margin-top:15px;
+  padding:15px;
+  border-radius:10px;
+  background:#f5f5f5;
+  border-left:5px solid #333;
+  font-weight:600;
+}
+
+.suggestion-box{
+  margin-top:15px;
+  padding:15px;
+  background:#eaffea;
+  border-left:5px solid #2ecc71;
+  border-radius:10px;
+  font-weight:500;
+}
+
+.assumption{
+  font-size:0.85rem;
+  color:#666;
+  margin-top:10px;
+}
+
+
+.chart-container{
+    margin-top:30px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+#costChart{
+    max-width:500px;
+    margin:auto;
+}
+
+.chart-container{
+    display:none;
+}

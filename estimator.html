@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Cost Estimator</title>
+
+    <link rel="stylesheet" href="estimator.css">
+</head>
+<body>
+
+  <section class="estimator">
+
+    <h1>💰 Travel Cost Estimator</h1>
+
+    <p>
+      Estimate your travel expenses before planning your trip.
+    </p>
+
+    <div class="estimator-form">
+
+      <select id="country">
+        <option value="">Select Country</option>
+        <option value="india">India</option>
+        <option value="japan">Japan</option>
+        <option value="hongkong">Hong Kong</option>
+      </select>
+
+      <input
+        type="number"
+        id="days"
+        placeholder="Number of Days"
+        min="1"
+      >
+
+      <input
+        type="number"
+        id="travellers"
+        placeholder="Number of Travellers"
+        min="1"
+      >
+
+      <select id="accommodation">
+        <option value="">Accommodation Type</option>
+        <option value="hostel">Hostel</option>
+        <option value="hotel">Hotel</option>
+        <option value="luxury">Luxury Resort</option>
+      </select>
+
+      <select id="season">
+        <option value="">Travel Season</option>
+        <option value="off">Off Season</option>
+        <option value="normal">Normal Season</option>
+        <option value="peak">Peak Season</option>
+      </select>
+
+      <button id="calculateBtn">
+        Calculate Cost
+      </button>
+
+    </div>
+
+    <div id="resultBox"></div>
+
+    <div class="chart-container">
+    <canvas id="costChart"></canvas>
+</div>
+
+  </section>
+<script src="estimator.js"></script>
+</body>
+</html>

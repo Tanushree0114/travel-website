@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travique</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <h1 class="logo">Travique</h1>
+
+        <div class="nav-links">
+
+    <div class="nav-box"><a href="#home">Home</a></div>
+
+    <div class="nav-box dropdown">
+        Discover ▼
+
+        <div class="dropdown-content">
+            <a href="destination.html?country=india">India 🇮🇳</a>
+            <a href="destination.html?country=japan">Japan 🇯🇵</a>
+            <a href="destination.html?country=hongkong">Hong Kong 🇭🇰</a>
+            
+        </div>
+    </div>
+
+    <div class="nav-box">
+  <a href="#whereToGo">Where to Go </a>
+</div>
+
+       
+  
+
+    <div class="nav-box"><a href="#plan">Plan Trip</a></div>
+
+    <div class="nav-box"><a href="#gallery">Gallery</a></div>
+
+    <div class="nav-box"><a href="#contact">Contact</a></div>
+
+</div>
+
+<div class="nav-box">
+  <a href="saved.html">
+    Saved Trips
+  </a>
+</div>
+
+    </nav>
+
+
+   
+    <!-- VIDEO SECTION -->
+
+    <section class="video-section" id="home">
+
+        <video autoplay muted loop playsinline>
+
+            <source src="vedios/4133023-hd_1920_1080_30fps.mp4" type="video/mp4">
+
+        </video>
+
+        <div class="video-overlay">
+
+            <h1>Travel Like Never Before</h1>
+
+        </div>
+
+    </section>
+
+
+
+     <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Discover The World Beyond Maps</h1>
+
+            <p>
+                Luxury journeys, cinematic experiences and unforgettable destinations —
+                all with Travique.
+            </p>
+
+            <div class="hero-cards">
+
+
+              <a href="estimator.html" class="floating-card estimator-card">
+
+    <h2>💰 Travel Cost Estimator</h2>
+
+    <p>
+        Estimate flights, hotels, food and transport expenses before you travel.
+    </p>
+
+</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+      <!-- WEATHER SECTION (AUTO) -->
+<section class="weather-section">
+
+  <h1 class="section-title">🌤️ Check Weather Before You Plan</h1>
+
+  <div class="weather-container">
+
+    <select id="weatherCountry">
+      <option value="">Select Country</option>
+      <option value="india">India</option>
+      <option value="japan">Japan</option>
+      <option value="hongkong">Hong Kong</option>
+    </select>
+
+    <button id="weatherBtn">
+      Get Weather
+    </button>
+
+    <div id="weatherBox">
+     
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+    <!-- FEATURES SECTION -->
+
+    <section class="features" id="whereToGo">
+
+        <h1 class="section-title">Aren’t Sure Where To Go?</h1>
+
+        <p class="section-subtitle">
+            Explore experiences curated specially for every traveler.
+        </p>
+
+
+        <div class="feature-container">
+
+
+            <div class="feature-card">
+
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                    alt="Beach">
+
+                <h2>Hidden Gems</h2>
+
+                <p>
+                    Discover underrated destinations around the world.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+                    alt="Food">
+
+                <h2>Food Experiences</h2>
+
+                <p>
+                    Explore cuisines, cafes and iconic local dishes.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
+                    alt="Hotel">
+
+                <h2>Luxury Stays</h2>
+
+                <p>
+                    Experience premium hotels and breathtaking resorts.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60"
+                    alt="Budget">
+
+                <h2>Budget Travel</h2>
+
+                <p>
+                    Plan unforgettable trips without overspending.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9"
+                    alt="Packing">
+
+                <h2>Packing Guide</h2>
+
+                <p>
+                    Know exactly what essentials to carry for your trip.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff"
+                    alt="Adventure">
+
+                <h2>Adventure Tours</h2>
+
+                <p>
+                    Mountains, forests, beaches and thrilling experiences.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d"
+                    alt="Timeline">
+
+                <h2>Trip Timeline</h2>
+
+                <p>
+                    Perfectly organized day-wise travel itineraries.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                    alt="Wishlist">
+
+                <h2>Wishlist Trips</h2>
+
+                <p>
+                    Save your dream destinations for future adventures.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+  
+
+
+
+    <!-- PLANNER SECTION -->
+
+    <section class="planner" id="plan">
+
+        <h1 class="section-title">Plan Your Dream Trip</h1>
+
+        <div class="planner-container">
+
+
+
+
+            <div class="planner-box">
+
+    <h2>Search Destination</h2>
+
+    <input
+        type="text"
+        id="searchCountry"
+        placeholder="Type a country..."
+    >
+
+    <div id="searchResults"></div>
+
+</div>
+    
+
+</div>
+
+<div class="planner-box">
+
+    <h2>Travel Type</h2>
+
+    <select id="typeSelect">
+        <option value="adventure">Adventure</option>
+        <option value="relax">Relax</option>
+        <option value="luxury">Luxury</option>
+    </select>
+
+</div>
+
+<div class="planner-box">
+
+    <h2>Budget</h2>
+
+    <select id="budgetSelect">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+    </select>
+
+</div>
+
+
+
+            <div class="planner-box">
+
+    <h2>Generate Plan</h2>
+
+    <button onclick="generatePlan()">Create My Trip ✈️</button>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+    <div id="planResult" style="text-align:center; padding:50px;"></div>
+
+
+    <!-- GALLERY SECTION -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="section-title">Travel Gallery</h1>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                alt="Travel">
+
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800"
+                alt="Travel">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Travel">
+
+            <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98"
+                alt="Travel">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+    <h1>Travique</h1>
+
+    <p>Escape Ordinary. Discover Extraordinary.</p>
+
+    <div class="contact-info">
+
+        <p>📧 Email: support@travique.com</p>
+        <p>📞 Phone: +91 98765 43210</p>
+        <p>📍 Location: India</p>
+
+    </div>
+
+</footer>
+    
+<script src="script.js"></script>
+   
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:white;
+}
+
+nav{
+padding:20px 8%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+color:black;
+}
+
+.hero{
+height:80vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+background-size:cover;
+background-position:center;
+}
+
+.overlay{
+position:absolute;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.3);
+}
+
+.hero-content{
+position:relative;
+
+z-index:2;
+
+color:white;
+}
+
+.hero-content h1{
+font-size:4rem;
+}
+
+.info{
+padding:100px 8%;
+}
+
+.info h2{
+text-align:center;
+
+margin-bottom:50px;
+}
+
+.info-container{
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+}
+
+.info-box{
+padding:30px;
+
+border-radius:20px;
+
+border:1px solid rgba(0,0,0,0.2);
+
+text-align:center;
+}
+
+/* PLACES */
+
+.places{
+    padding:80px 8%;
+}
+
+.places h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+#places-container{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+    margin-top:40px;
+}
+
+.place-card{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.5s;
+}
+
+.place-card:hover{
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.place-card img{
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+}
+
+.place-card h3{
+    padding:15px;
+
+    text-align:center;
+}
+
+.place-card p{
+    padding:0 15px 20px;
+}
+
+
+/* CULTURE */
+
+.culture{
+    padding:80px 8%;
+}
+
+.culture h2{
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+.culture-card{
+
+    display:flex;
+
+    gap:30px;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+}
+
+.culture-card img{
+
+    width:450px;
+
+    max-width:100%;
+
+    border-radius:20px;
+}
+
+.culture-text{
+
+    flex:1;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+}
+
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.2rem;
+}
+
+.culture-card{
+    flex-direction:column;
+}
+
+.culture-card img{
+    width:100%;
+}
+
+.info-container{
+    grid-template-columns:1fr;
+}
+
+#places-container{
+    grid-template-columns:1fr;
+}
+
+}
