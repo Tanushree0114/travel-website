@@ -703,7 +703,7 @@ footer p{
 
  
   .hero{
-      height: 35vh;
+      height: 55vh;
   }
 
   .hero h1{
@@ -713,7 +713,12 @@ footer p{
   .hero-content p{
     font-size:1rem;
   }
+  
 
+  .video-section{
+      height:55vh;
+  }
+  
   .video-overlay h1{
     font-size:2rem;
     padding:20px;
