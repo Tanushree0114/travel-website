@@ -688,7 +688,7 @@ footer p{
 
 /* MOBILE RESPONSIVE */
 
-@media (max-width:768px){
+@media (max-width:900px){
 
   nav{
     flex-direction:column;
@@ -718,7 +718,7 @@ footer p{
   .video-section{
       height:55vh;
   }
-  
+
   .video-overlay h1{
     font-size:2rem;
     padding:20px;
