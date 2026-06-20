@@ -693,15 +693,26 @@ footer p{
   nav{
     flex-direction:column;
     gap:15px;
-    padding:15px;
+    padding:15px 5% ;
+  }
+
+  .logo{
+    font-size: 1.8rem;
   }
 
   .nav-links{
     flex-wrap:wrap;
     justify-content:center;
-  }
+    width: 100%;
+    gap: 10px;
 
- 
+  }
+  
+   .nav-box{
+        padding:8px 14px;
+        font-size:0.9rem;
+    }
+
   .hero{
       height: 55vh;
   }
