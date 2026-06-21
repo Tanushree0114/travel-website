@@ -722,9 +722,12 @@ footer p{
     .menu-toggle{
     display:block;
     color: white;
+    font-size: 2rem;
+    cursor: pointer;
     transition: 0.3s ease;
-}
-
+    user-select: none;
+    }
+    
    .menu-toggle.active{
     color: black;
 }
@@ -791,8 +794,6 @@ footer p{
 .dropdown-content{
     position: static;
     display: none;
-
-    width: 100%;
 
     flex-direction: column;
 
