@@ -732,10 +732,6 @@ footer p{
     height: 40px;
     }
 
-   .menu-toggle.active{
-    color: black;
-}
-
 
 .nav-links{
     position:fixed;
