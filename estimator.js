@@ -24,6 +24,28 @@ const countryCosts = {
 };
 
 
+setTimeout(() => {
+  if (costChart) costChart.destroy();
+
+  costChart = new Chart(ctx, {
+    type: "pie",
+    data: {
+      labels: ["Flights", "Hotel", "Food", "Transport"],
+      datasets: [{
+        data: [flight, hotel, food, transport]
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: "bottom" }
+      }
+    }
+  });
+
+}, 50);
+
+
 let costChart;
 
 
