@@ -895,8 +895,28 @@ footer p{
     }
 
     .feature-container{
-        grid-template-columns:1fr;
-    }
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.feature-card{
+    border-radius:18px;
+}
+
+.feature-card img{
+    height:120px;
+}
+
+.feature-card h2{
+    font-size:0.95rem;
+    padding:12px 12px 5px;
+}
+
+.feature-card p{
+    font-size:0.78rem;
+    padding:0 12px 14px;
+    line-height:1.4;
+}
 
     .gallery-grid{
         grid-template-columns:1fr;
