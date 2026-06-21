@@ -843,9 +843,19 @@ footer p{
     }
 
     .video-section{
+        width: 100%;
         height:100vh;
+        position:relative;
+        overflow:hidden;
         margin-top:0;
+        padding-top:0;
     }
+
+    .video-section video{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+}
 
     .video-overlay h1{
         font-size:2rem;
