@@ -703,17 +703,24 @@ footer p{
 
 @media (max-width:900px){
 
-    nav{
-        padding:15px 5%;
-        display:flex;
-        flex-direction:row;
-        justify-content:space-between;
-        align-items:center;
-        position:relative;
+   nav{
+    width:100%;
+    padding:15px 5%;
 
-        background:rgba(0,0,0,0.25);
-        backdrop-filter: blur(10px);
-    }
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:2000;
+
+    background:rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
 
     .logo{
         font-size:1.8rem;
@@ -837,6 +844,7 @@ footer p{
 
     .video-section{
         height:100vh;
+        margin-top:0;
     }
 
     .video-overlay h1{
