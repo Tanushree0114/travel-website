@@ -736,9 +736,6 @@ footer p{
     color: black;
 }
 
-   .menu-toggle.active::after{
-    content: "✕";
-}
 
 .nav-links{
     position:fixed;
