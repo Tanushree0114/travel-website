@@ -895,27 +895,31 @@ footer p{
     }
 
     .feature-container{
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
 }
 
 .feature-card{
-    border-radius:18px;
+    border-radius:16px;
+    overflow:hidden;
 }
 
 .feature-card img{
-    height:120px;
+   width:100%;
+    height:110px;
+    object-fit:cover;
 }
 
 .feature-card h2{
-    font-size:0.95rem;
-    padding:12px 12px 5px;
+    font-size:0.9rem;
+    padding:10px 10px 4px;
 }
 
 .feature-card p{
-    font-size:0.78rem;
-    padding:0 12px 14px;
-    line-height:1.4;
+    font-size:0.72rem;
+    padding:0 10px 12px;
+    line-height:1.3;
 }
 
     .gallery-grid{
