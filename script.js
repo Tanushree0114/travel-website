@@ -208,6 +208,7 @@ const navLinks = document.querySelector(".nav-links");
 
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+    menuToggle.classList.toggle("active");
 });
 
 const dropdown = document.querySelector(".dropdown");

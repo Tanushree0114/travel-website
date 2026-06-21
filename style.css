@@ -721,6 +721,16 @@ footer p{
 
     .menu-toggle{
     display:block;
+    color: white;
+    transition: 0.3s ease;
+}
+
+   .menu-toggle.active{
+    color: black;
+}
+
+   .menu-toggle.active::after{
+    content: "✕";
 }
 
 .nav-links{
@@ -792,7 +802,7 @@ footer p{
     border-radius: 10px;
     overflow: hidden;
 
-    margin-left: 5px;  
+    margin-left: 0px;  
     margin-right: 5px;
 
     box-shadow: 0 6px 18px rgba(0,0,0,0.08); /* subtle depth */
@@ -828,7 +838,7 @@ footer p{
     }
 
     .video-section{
-        height:45vh;
+        height:75vh;
     }
 
     .video-overlay h1{
