@@ -779,14 +779,21 @@ footer p{
 
 /* KEY FIX: remove layout shifting */
 .dropdown-content{
-    position: static;   /* IMPORTANT CHANGE */
-    display: none;      /* instead of max-height trick */
+    position: static;
+    display: none;
 
     flex-direction: column;
+
     background: white;
     margin-top: 8px;
+
     border-radius: 10px;
     overflow: hidden;
+
+    margin-left: 10px;   /* ⭐ MAIN FIX */
+    margin-right: 5px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08); /* subtle depth */
 }
 
 /* open state */
