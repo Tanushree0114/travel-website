@@ -737,7 +737,13 @@ footer p{
     justify-content: center;
     width: 40px;
     height: 40px;
+     -webkit-tap-highlight-color: transparent;
+    outline: none;
     }
+
+    .menu-toggle:focus{
+    outline:none;
+}
 
     .menu-toggle.active{
     color: black;
