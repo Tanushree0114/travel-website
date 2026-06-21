@@ -209,42 +209,46 @@ document.getElementById("costChart");
 if(costChart){
   costChart.destroy();
 }
-
 costChart = new Chart(ctx, {
 
-  type: "pie",
+  type: "doughnut",
 
   data: {
-
-    labels: [
-      "Flights",
-      "Hotel",
-      "Food",
-      "Transport"
-    ],
-
+    labels: ["Flights", "Hotel", "Food", "Transport"],
     datasets: [{
-
-      data: [
-        flight,
-        hotel,
-        food,
-        transport
-      ]
-
+      data: [flight, hotel, food, transport]
     }]
   },
 
   options: {
-
     responsive: true,
 
+    // ⭐ 1. Doughnut hole size
+    cutout: "60%",
+
+    // ⭐ 2. Animation (smooth professional feel)
+    animation: {
+      animateScale: true,
+      animateRotate: true
+    },
+
     plugins: {
+
+      // ⭐ 3. Legend styling
       legend: {
         position: "bottom"
-      }
-    }
+      },
 
+      // ⭐ 4. Tooltip formatting (PRO TOUCH 💼)
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            return "₹ " + context.raw.toLocaleString();
+          }
+        }
+      }
+
+    }
   }
 
 });
