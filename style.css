@@ -772,41 +772,38 @@ footer p{
 
 
 .dropdown{
-    display:flex;
-    flex-direction:column;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-/* IMPORTANT: make it part of layout */
+/* KEY FIX: remove layout shifting */
 .dropdown-content{
-    display:flex;
-    flex-direction:column;
-    position:relative;
+    position: static;   /* IMPORTANT CHANGE */
+    display: none;      /* instead of max-height trick */
 
-    max-height:0;
-    overflow:hidden;
-
-    opacity:1;
-    transition:max-height 0.35s ease;
+    flex-direction: column;
+    background: white;
+    margin-top: 8px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 /* open state */
 .dropdown.active .dropdown-content{
-    max-height:300px;
+    display: flex;
 }
 
-/* each link stays inside box properly */
+/* items */
 .dropdown-content a{
-    padding:12px 15px;
-    display:block;
-    color:#111;
-    background:white;
-    border-bottom:1px solid #eee;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    color: black;
+    background: white;
 }
 
-/* remove weird hover shifting */
 .dropdown-content a:hover{
-    background:#f5f5f5;
-    padding-left:15px;
+    background: #f3f3f3;
 }
 
     .hero{
