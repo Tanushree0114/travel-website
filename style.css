@@ -870,7 +870,7 @@ footer p{
     .video-section{
         width: 100%;
         min-height:85vh;
-        height:auto
+        height:auto;
         position:relative;
         overflow:hidden;
         margin-top:0;
