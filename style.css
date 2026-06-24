@@ -855,7 +855,8 @@ footer p{
 }
 
     .hero{
-        height:75vh;
+        min-height:55vh;
+        height:auto;
     }
 
     .hero h1{
@@ -868,7 +869,8 @@ footer p{
 
     .video-section{
         width: 100%;
-        height:75vh;
+        min-height:85vh;
+        height:auto
         position:relative;
         overflow:hidden;
         margin-top:0;
@@ -883,12 +885,15 @@ footer p{
 
 .video-overlay{
     background:rgba(0,0,0,0.25);
+    padding:120px 20px 60px;
+
 }
 
     .video-overlay h1{
         font-size:2rem;
         padding:20px;
-        width:85%;
+        width:90%;
+        margin:auto;
         line-height:1.2;
     }
 
